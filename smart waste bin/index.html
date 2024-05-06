@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- onsen template -->
+  <!-- css styling -->
+  <link rel="stylesheet" href="css/onsenui.css">
+  <link rel="stylesheet" href="css/onsen-css-components.css">
+  
+  <!-- js script -->
+  <script src="js/onsenui.js"></script>
+<!-- onsen template ends here -->
+
+<!-- my custom style -->
+<link rel="stylesheet" href="css/style.css">
+
+<script type="text/javascript" src="js/batt_anim/batt_anima.js"></script>
+<script src="js/batt_anim/d3-v3-min.js" language="JavaScript"></script>
+<!-- <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script> -->
+<script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+
+
+        <title>Smart Waste Management System</title>
+
+    </head>
+    <body>
+        
+
+
+        <!-- <template id="energy_meter.html"> -->
+            <ons-page >
+               <div class="Toolbar">
+                <span style="font-size:5vw;">Smart Waste Bin</span>  
+                <ons-icon icon="ion-ios-wifi" size="200%" style="color: #e61511e8; margin-left:40%;" id = "status" ></ons-icon>
+               </div>
+              <div class="container" style="margin-top:5%">
+        
+                <div id="block"> 
+                  <ons-icon icon="ion-ios-at" size="200%" style="color: #2f10b9dc;font-size:5.5vw;margin-left: 5%;"></ons-icon>
+                <span style="font-size:4vw; color: #0206147c;margin-top:4%; margin-left:5%" > BIN NAME</span>
+                <span style="font-size:5vw; color: #020614e5;margin-top:4%; margin-left:5%" id="bin_id"> None</span>
+                </div>
+        
+              <div style="font-size:6vw; color: #051c72e8;margin-top:4%; margin-left:5%;font-weight: bold;text-align: center;" >
+                Waste Level
+
+              </div>  
+
+
+
+
+
+              
+              <!-- ******************* GUAGE START ************************************************* -->
+                <div style="margin-top: 5%;margin-left: auto;margin-right: auto;height: 30vh;">
+                  <svg id="fillgauge1" width="auto" height="30vh"></svg>
+                </div>
+               <!-- ********************************** GUAGE END ***************************************   -->
+              
+              
+
+
+               <div style="display:flex;justify-content:center;margin-top: 5%;">
+                <img src="" width="40%" id = "binImage" height="50%">
+
+
+               </div>
+          
+                  <div id="block" style="padding:2%; width:50%; margin-bottom:4%" onclick="Location()">
+                    <div style="text-align: center">
+                     <ons-icon icon="ion-md-map" size="200%" style="color: #e7811cd2;font-size:5.5vw;"></ons-icon>
+                     <div style="font-size:4vw; color: #95610c7c;margin-top:4%" >View Bin Location</div>
+                    </div>
+                   </div>
+                   
+                  
+                  
+               
+        
+                
+         
+             
+                
+                  <script src="js/websocket.js"></script>
+            
+                
+            </ons-page>
+          
+    </body>
+</html>
